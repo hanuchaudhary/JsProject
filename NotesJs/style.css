@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+
+}
+
+.container {
+    background-color: #222;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.container>h1 {
+    font-size: 15vw;
+}
+
+
+.content {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    color: #fff;
+    padding: 0 3vw;
+    position: absolute;
+}
+
+.content h1{
+    text-align: center;
+    font-size: 1.2vw;
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+    font-weight: 100;
+}
+
+.button{
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: 1px solid #6c6b6b;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.button::after{
+    content: "Create Note";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    background-color: #595959;
+    left: 0;
+    bottom: -100%;
+    transition: all ease 0.4s;
+    border-radius: 50%;
+}
+
+.button:hover{
+    border: 1px solid #767676;
+
+}
+
+.button:hover::after{
+    border-radius: 0;
+    bottom: 0;
+}
+
+.inputNote{
+    min-height: 150px;
+    width: 430px;
+    min-width: 300px;
+    background-color: #76767678;
+    border-radius: 20px;
+    margin-top: 1vw;
+    padding: 1vw;
+    outline: none;
+    font-size: 1.5vw;
+    position: relative;
+}
+
+.delete{
+    margin: 1vw;
+    cursor: pointer;
+    /* display: inline-block; */
+    text-align: end;
+}
+
+.contentInputArea{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+

@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection{
+    color: white;
+    background-color: black;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #F7F7F7;
+}
+
+.cursor {
+    height: 200px;
+    width: 200px;
+    background-color: #FC5401;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: .7 ;
+    /* z-index: 9999; */
+}
+
+.cursor2 {
+    height: 200px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.814);
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+    top: 100px;
+    opacity: .6 ;
+    /* z-index: 9; */
+}
+
+.cursor2 h1{
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    position: absolute;
+    text-transform: uppercase;
+    top:90px;
+    left: 80px;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: #b4b4b4; */
+    z-index: 9999;
+    position: fixed;
+    padding: 2vw;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999999;
+}
+
+.navp1{
+    height: 82px;
+    overflow: hidden;
+}
+
+.navp1 svg{
+    display: block;
+
+}
+
+.navp2 a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: #000;
+    padding: 0 29px;
+    font-size: .8vw;
+    text-decoration: none;
+}
+
+.navp2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navp2 .icons{
+    display: flex;
+    background-color: #fff;
+    border-radius: 40px;
+}
+
+.navp2 i{
+    font-size: 1.2vw;
+    padding: 10px 20px;
+}
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0 3vw;
+    
+}
+
+.page1 .titles{
+    padding-top: 15vw;
+}
+
+.page1 .titles h1{
+    font-size: 14.8vw;
+    line-height: .9;
+    text-align: center;
+    font-family: futura;
+    letter-spacing: -3px;
+}
+
+
+.imageContainer{
+    min-height: 60vh;
+    width: 100%;
+    
+}
+
+.imageContainer img{
+    width: 100%;
+    border-bottom: 2px solid gray;
+}
+
+.imageClast{
+    display: flex;
+    justify-content: space-between;
+}
+
+.page2{
+    margin-top: 3vw;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.page2 .element{
+    height: 100%;
+    /* background-color: gray; */
+    width: 31%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s all ease;
+}
+
+
+
+.element img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+}
+
+.element .dets{
+    /* height: 60px; */
+    position: absolute;
+    z-index: 9;
+    background-color: #E5F0D6;
+    padding: 1.5vw;
+    width: 75%;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.detsTop{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.detsTop p{
+    font-size: .9vw;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.detsBottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    padding-top: 50px;
+    display: none;
+}
+
+.dets:hover .detsBottom{
+    display: flex;
+    transition: 1s all ease;
+}
+
+.detsBottom img{
+    height: 100%;
+    width: 90px;
+    object-fit: cover;
+    /* padding: 0 10px; */
+}
+
+.detsBottom p {
+    font-size: .9vw;
+    text-transform: uppercase;
+    text-align: center;
+}
+.page4{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: helvetica;
+    padding: 0 2vw;
+}
+
+.page4>h1{
+    font-size: 4vw;
+    letter-spacing: -2px;
+    line-height: 1;
+    font-weight: 900;
+}
+/* 
+.page4right{
+    width: 30%;
+} */
+.page4right p{
+    text-align: left;
+    font-size: 1.2vw;
+}
+
+.page4right a{
+    letter-spacing: 2px;
+    color: #000;
+}
+
+.shop{
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 2px solid gray;
+    padding-bottom: 3vw;
+}
+
+.item{
+    text-align: center;
+}
+
+.item img{
+    height: 100%;
+    width: 45vw;
+    object-fit: cover;
+}
+
+.item h3{
+    font-size: .8vw;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.page5{
+    height: 100vh;
+    width: 100%;
+    padding: 0 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vw;
+}
+
+.page5 h1{
+    font-size: 5vw;
+    line-height: 1;
+    font-family: futura;
+    text-align: center;
+}
+
+button{
+    color: #fff;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin: 5vw 0;
+}
+
+

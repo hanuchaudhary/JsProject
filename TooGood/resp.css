@@ -1,0 +1,60 @@
+@media (max-width:600px) {
+    nav {
+        height: 60px;
+        /* display: block; */
+
+    }
+
+    .navp1 {
+        height: 47px;
+        /* background-color: red; */
+    }
+
+    .navp1 svg {
+        width: 40px;
+        height: 55px;
+    }
+
+    .navp2 a {
+        display: none;
+    }
+
+    .navp2 i {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .page1 {
+        height: 100vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .imageContainer {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .imageContainer img {
+        /* height: 500px; */
+        object-fit: cover;
+        width: 700px;
+
+    }
+
+    .imageClast {
+        gap: 238px;
+        font-size: 8px;
+        font-family: helvetica;
+        font-weight: 100;
+        padding-top: 20px;
+    }
+
+l̥ō
+}

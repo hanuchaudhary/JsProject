@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.time{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    color: #222;
+    /* color: transparent; */
+    font-size: 100px;
+    font-family: 'Oswald', sans-serif;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    background-image: url(macos-big-sur-apple-layers-fluidic-colorful-wwdc-stock-4096x2304-1455.jpeg);
+}
+
+.hours{
+    padding: 0 40px;
+    padding-top:20px;
+    color: #222;
+    padding-bottom:40px;
+    border-radius: 10px ;
+
+}
+
+.mins{
+    padding: 0 40px;
+    padding-top:20px;
+    padding-bottom:40px;
+    border-radius: 10px ;
+}
+
+.secs{
+    padding: 0 40px;
+    padding-top:20px;
+    padding-bottom:40px;
+    border-radius: 10px ;
+}
+
+.hours::selection{
+    background-color: #3c3c3c;
+    color: crimson;
+}
+
+.mins::selection{
+    background-color: #3c3c3c;
+    color: royalblue;
+}
+
+.secs::selection{
+    background-color: #3c3c3c;
+    color: burlywood;
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    .hours {
+      background-color: rgba(255, 255, 255, 0.5);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    }
+    .mins {
+      background-color: rgba(255, 255, 255, 0.5);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    }
+    .secs {
+      background-color: rgba(255, 255, 255, 0.5);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    }
+    .warning {
+      display: none;
+    }
+  }
